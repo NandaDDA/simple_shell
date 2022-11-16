@@ -27,7 +27,7 @@ list_t *node = info->env;
 size_t i = 0;
 char *p;
 if (!node || !var)
-return (0)
+return (0);
 while (node)
 {
 p = starts_with(node->str, var);

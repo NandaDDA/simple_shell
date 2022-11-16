@@ -64,7 +64,7 @@ _putchar(*a);
 _putchar('\'');
 _puts(p + 1);
 _puts("'\n");
-return (0)
+return (0);
 }
 return (1);
 }
@@ -72,7 +72,7 @@ return (1);
  * _myalias - mimics the alias builtin (man alias)
  * @info: Structure containing potential arguments. Used to maintain
  * constant function prototype.
- * Return: Always 0
+ * Return: Always(0)
  */
 int _myalias(info_t *info)
 {
@@ -97,5 +97,5 @@ set_alias(info, info->argv[i]);
 else
 print_alias(node_starts_with(info->alias, info->argv[i], '='));
 }
-return (0);
+return (0)
 }

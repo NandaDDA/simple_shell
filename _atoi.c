@@ -22,7 +22,7 @@ return (1);
 return (0);
 }
 /**
- * isalpha - checks for alphabetic character
+ * _isalpha - checks for alphabetic character
  * @c: The character to input
  * Return: 1 if c is alphabetic, 0 otherwise
  */

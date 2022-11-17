@@ -47,6 +47,7 @@ for (i = 0;  s[i] != '\0' && flag != 2; i++)
 if (s[i] == '-')
 sign *= -1;
 if (s[i] >= '0' && s[i] <= '9')
+
 {
 flag = 1;
 result *= 10;

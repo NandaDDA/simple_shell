@@ -77,8 +77,6 @@ count++;
 }
 current %= i;
 }
-__putchar('0' + current);
-count++;
 return (count);
 }
 

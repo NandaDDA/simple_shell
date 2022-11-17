@@ -23,13 +23,16 @@ char *p, c;
 int ret;
 p = _strchr(str, '=');
 if (!p)
+
 return (1);
+
 c = *p;
 *p = 0;
 ret = delete_node_at_index(&(info->alias),
 get_node_index(info->alias, node_starts_with(info->alias, str, -1)));
 *p = c;
 return (ret);
+
 }
 /**
  * set_alias - sets alias to string
@@ -41,10 +44,14 @@ int set_alias(info_t *info, char *str)
 {
 char *p;
 p = _strchr(str, '=');
-if (!p)
+	if (!p)
+
 return (1);
-if (!*++p)
+
+	if (!*++p)
+
 return (unset_alias(info, str));
+
 unset_alias(info, str);
 return (add_node_end(&(info->alias), str, 0) == NULL);
 }

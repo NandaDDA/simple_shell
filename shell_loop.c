@@ -48,8 +48,8 @@ return (builtin_ret);
  */
 int find_builtin(info_t *info)
 {
-int i, built_in_ret = -1;
-builtin_table builtintbl[] = {
+  int i, built_in_ret = -1;
+  builtin_table builtintbl[] = {
 {"exit", _myexit},
 {"env", _myenv},
 {"help", _myhelp},
